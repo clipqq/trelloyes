@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders without crashing 1`] = `
+<div
+  className="App"
+>
+  <div
+    class="List-cards"
+  >
+    <div
+      className="card"
+    >
+      <h3>
+        cliff
+      </h3>
+      <p>
+        do something
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <h3>
+        willie
+      </h3>
+      <p>
+        do something else
+      </p>
+    </div>
+  </div>
+  <div
+    class="List-cards"
+  >
+    <div
+      className="card"
+    >
+      <h3>
+        cliff
+      </h3>
+      <p>
+        do something
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <h3>
+        willie
+      </h3>
+      <p>
+        do something else
+      </p>
+    </div>
+  </div>
+</div>
+`;
