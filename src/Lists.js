@@ -9,7 +9,7 @@ function Lists(props) {
     return (
 
           <div class='List-cards'>
-            <Cards cardObjects={myCards} />
+            <Cards card={card} />
           </div>
 
     )
@@ -17,5 +17,6 @@ function Lists(props) {
   return htmlList
 
 }
+Lists.defaultProps = { cardStore: [] }
 
 export default Lists;
