@@ -2,29 +2,22 @@ import React from 'react';
 import './App.css';
 import Lists from './Lists.js'
 
-function App(props) {
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      cards: props.cards
+    }
+  }
 
-  const testTitle = 'To-Do'
-  const testCards =
-    [
-      {
-        id: 3463,
-        title: 'cliff',
-        task: 'do something'
-      },
-      {
-        id: 5749,
-        title: 'willie',
-        task: 'do something else'
-      }
-    ]
+  render() {
+    return (
+      <div className="App">
+        <Lists appState={this.state.cards}  />
+      </div>
+    )
+  }
 
-  /////////////////////////////
-  return (
-    <div className="App">
-      <Lists header={testTitle} cardStore={testCards}/>
-    </div>
-  )
 }
 
 

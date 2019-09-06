@@ -4,7 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const testCards =
+  [
+    {
+      id: 3463,
+      title: 'cliff',
+      task: 'do something'
+    },
+    {
+      id: 5749,
+      title: 'willie',
+      task: 'do something else'
+    }
+  ]
+
+ReactDOM.render(<App cards={testCards} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
